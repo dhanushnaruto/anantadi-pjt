@@ -21,7 +21,7 @@ function Home() {
             :url.split('/').pop()
             
            try{
-                const response = await axios.post('https://anantadi-pjt-1.onrender.com', {link:videoId, keywords:keywords})
+                const response = await axios.post('https://anantadi-pjt-1.onrender.com/', {link:videoId, keywords:keywords})
                 alert('data submited successfully')
                 console.log('data submited successfully')
                 navigate('/videos')
@@ -32,7 +32,9 @@ function Home() {
         }
     }
 
-
+ const navigatevidoes = ()=>{
+    navigate('/videos')
+ }
 
   return (
     <div className='home-container'>
@@ -60,6 +62,7 @@ function Home() {
                 </form>
                 <div>
                     <button className='call-button' onClick={handlSubmit}>Call to Action</button>
+                    <button  className='call-button' onClick={navigatevidoes} style={{marginLeft:'10px'}}>Videos</button>
                 </div>
             </div>
         </div>

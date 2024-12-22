@@ -49,6 +49,7 @@ function VideoFolder() {
         </div>
 
         <button className='back-button' onClick={()=>navigate('/')}>Back to Home</button>
+        
     </div>
   )
 }
