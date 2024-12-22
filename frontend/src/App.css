@@ -1,0 +1,178 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color: blue;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+}
+
+.home-container{
+  background-image: linear-gradient(to left,#07ad33, #67f58d);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.home-card{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: blue;
+}
+.home-card div{
+  text-align: center;
+}
+.home-card div h4{
+  color:rgb(209, 209, 9) ;
+}
+.home-card div p{
+  color: red;
+}
+
+.navbar button{
+  border: none;
+ background-color: transparent;
+ cursor: pointer;
+ 
+}
+
+form{
+  text-align: start;
+}
+
+form section{
+  display: flex;
+flex-direction: column;
+}
+
+form section label{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+button-container button {
+  width: 100px;
+}
+
+.link-input{
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  outline-color:azure;
+}
+
+::placeholder{
+ padding: 10px;
+}
+
+textarea{
+  border-radius: 8px;
+  border: none;
+  outline-color:azure;
+}
+
+.call-button{
+  border: none;
+  outline-color: azure;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #71f294;
+  color: blue;
+}
+
+.videos-container{
+  background-image: linear-gradient(to left,#07ad33, #67f58d);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  height: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+
+}
+.searchbar input{
+ border: none;
+ width: 100%;
+ height: 30px;
+ background: transparent;
+ outline-color: aliceblue;
+ margin-left: 10px;
+}
+
+.searchicon{
+  color: blue;
+  font-size: 25px;
+}
+
+@media (min-width: 750px) and (orientation: landscape) {
+  .searchbar {
+    width: 60%;
+  }
+}
+
+.video-items{
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.video-items:hover{
+ transform: scale(1.05);
+ transition: 0.6s;
+}
+
+.video-items h4{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blueviolet;
+}
+.not-found-img{
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.back-button{
+  position: fixed;
+  bottom: 10px;
+  border: none;
+  outline-color: azure;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(146, 91, 198);
+  color: #ffffff;
+}
+
+@media (min-width: 750px) and (orientation: landscape) {
+  .back-button{
+    bottom: 30px;
+  }
+}
