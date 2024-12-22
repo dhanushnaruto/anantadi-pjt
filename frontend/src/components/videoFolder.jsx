@@ -17,7 +17,7 @@ function VideoFolder() {
   useEffect(()=>{
     const getData = async()=>{
       try{
-        const response = await axios.get('http://localhost:3004/')
+        const response = await axios.get('https://anantadi-pjt-1.onrender.com/')
         setData(response.data)
       }catch(e){
         console.log(e.message)
