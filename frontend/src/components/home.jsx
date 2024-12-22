@@ -21,7 +21,7 @@ function Home() {
             :url.split('/').pop()
             
            try{
-                const response = await axios.post('http://localhost:3004', {link:videoId, keywords:keywords})
+                const response = await axios.post('https://anantadi-pjt-1.onrender.com', {link:videoId, keywords:keywords})
                 alert('data submited successfully')
                 console.log('data submited successfully')
                 navigate('/videos')
