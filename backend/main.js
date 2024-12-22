@@ -2,6 +2,7 @@ import express from 'express'
 import connectDb from './db.js'
 import cors from 'cors'
 import Video from './model.js'
+import dotenv from 'dotenv'
 
 const app = express()
 
@@ -9,7 +10,7 @@ app.use(express.json())
 
 app.use(cors({ origin: 'http://localhost:5173'}))
 
-
+dotenv.config()
 connectDb()
 
 
