@@ -8,7 +8,7 @@ const app = express()
 
 app.use(express.json())
 
-app.use(cors({ origin: 'https://anantadi-pjt-2.onrender.com/'}))
+app.use(cors({ origin: 'https://anantadi-pjt-2.onrender.com'}))
 
 dotenv.config()
 connectDb()
