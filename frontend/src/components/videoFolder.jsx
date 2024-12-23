@@ -9,7 +9,9 @@ function VideoFolder() {
   const [videoData, setData] = useState([])
   const [search, setSearch] = useState('')
 
-  const filteredData = videoData.filter(each=>each.keywords.toLowerCase().includes(search.toLowerCase())
+  const filteredData = videoData.filter(each => 
+    each.keywords && each.keywords.toLowerCase().includes(search.toLowerCase())
+  );
   console.log(filteredData)
   const navigate = useNavigate()
 
